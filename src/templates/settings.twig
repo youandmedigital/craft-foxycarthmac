@@ -1,0 +1,43 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * FoxyCart HMAC plugin for Craft CMS 3.x
+ *
+ * foxycarthmac Settings.twig
+ *
+ * @author    You & Me Digital
+ * @copyright Copyright (c) 2019 you
+ * @link      https://youandme.digital
+ * @package   Foxycarthmac
+ * @since     0.0.1
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+<p>Make sure you have enabled "would you like to enable cart validation?" in your FoxyCart account. This can be found in your store advanced settings.</p>
+
+{#
+    As we're supporting environmental variables in Craft 3.1, use an auto
+    suggest field. If a varible is setup in the .env file it will auto suggest it
+#}
+
+{{ forms.autosuggestField({
+    label: 'Cart URL',
+    instructions: 'For example, this could be https://yourdomain.foxycart.com/cart or https://secure.yourcustomdomain.com/cart',
+    id: 'fcUrl',
+    name: 'fcUrl',
+    value: settings['fcUrl'],
+    suggestions: craft.cp.getEnvSuggestions(),
+    })
+}}
+
+{{ forms.autosuggestField({
+    label: 'API Key',
+    instructions: 'This can be found in your FoxyCart control panel under store advanced settings',
+    id: 'fcApiKey',
+    name: 'fcApiKey',
+    value: settings['fcApiKey'],
+    suggestions: craft.cp.getEnvSuggestions(),
+    })
+}}

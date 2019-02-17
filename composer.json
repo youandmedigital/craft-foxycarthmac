@@ -1,0 +1,43 @@
+{
+    "name": "youandmedigital/foxycarthmac",
+    "description": "FoxyCart HMAC is a cryptographic method to prevent people from tampering with your product links",
+    "type": "craft-plugin",
+    "version": "0.0.1",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "foxycart-hmac"
+    ],
+    "support": {
+        "docs": "https://github.com/youandmedigital/craft-foxycart-hmac/blob/master/README.md",
+        "issues": "https://github.com/youandmedigital/craft-foxycart-hmac/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "You & Me Digital",
+            "homepage": "https://youandme.digital"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "youandmedigital\\foxycarthmac\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "FoxyCart HMAC",
+        "handle": "foxycarthmac",
+        "hasCpSettings": true,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/youandmedigital/craft-foxycart-hmac/master/CHANGELOG.md",
+        "components": {
+            "foxyCartHMACService": "youandmedigital\\foxycarthmac\\services\\FoxyCartHMACService"
+        },
+        "class": "youandmedigital\\foxycarthmac\\FoxyCartHMAC"
+    }
+}
