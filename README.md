@@ -50,7 +50,6 @@ https://foxycarturl.com/cart?name=Product+Name||ab1e0225fb2fb7f0a08237fd0f6c1f9f
 
 Some things to do, and ideas for potential features:
 
-* Test with forms (only tested with Cart URL)
 * Release it
 
 Brought to you by [You & Me Digital](https://youandme.digital)

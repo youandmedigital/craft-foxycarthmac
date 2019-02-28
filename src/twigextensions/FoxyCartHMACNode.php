@@ -2,7 +2,8 @@
 /**
  * FoxyCart HMAC plugin for Craft CMS 3.x
  *
- * tbc
+ * FoxyCart HMAC is a cryptographic method to prevent people from tampering
+ * with your product links
  *
  * @link      https://youandme.digital
  * @copyright Copyright (c) 2019 You & Me Digital
@@ -18,8 +19,6 @@ class FoxyCartHMACNode extends \Twig_Node
     // Compile the twig and pass it onto the fc_hash_html function...
     public function compile(\Twig_Compiler $compiler)
     {
-        $html = $this->getAttribute('html');
-
         $compiler
             ->addDebugInfo($this);
         $compiler

@@ -2,7 +2,8 @@
 /**
  * FoxyCart HMAC plugin for Craft CMS 3.x
  *
- * tbc
+ * FoxyCart HMAC is a cryptographic method to prevent people from tampering
+ * with your product links
  *
  * @link      https://youandme.digital
  * @copyright Copyright (c) 2019 You & Me Digital
@@ -16,7 +17,7 @@ use youandmedigital\foxycarthmac\twigextensions\FoxyCartHMACNode;
  *
  * @author    You & Me Digital
  * @package   FoxyCartHMAC
- * @since     0.0.2
+ * @since    1.0.0
  *
  */
 class FoxyCartHMACTokenParser extends \Twig_TokenParser
@@ -27,20 +28,12 @@ class FoxyCartHMACTokenParser extends \Twig_TokenParser
     {
         $lineNo = $token->getLine();
         $stream = $this->parser->getStream();
-
-        $attributes = [
-            'html' => false
-        ];
-
-        if ($stream->test(\Twig_Token::NAME_TYPE, 'html')) {
-            $attributes['html'] = true;
-            $stream->next();
-        }
+        $stream->next();
 
         $stream->expect(\Twig_Token::BLOCK_END_TYPE);
         $nodes['body'] = $this->parser->subparse([$this, 'endTag'], true);
         $stream->expect(\Twig_Token::BLOCK_END_TYPE);
-        return new FoxyCartHMACNode($nodes, $attributes, $lineNo, $this->getTag());
+        return new FoxyCartHMACNode($nodes, $lineNo, $this->getTag());
     }
 
     // Start twig tag with...

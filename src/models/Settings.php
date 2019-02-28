@@ -2,7 +2,8 @@
 /**
  * FoxyCart HMAC plugin for Craft CMS 3.x
  *
- * tbc
+ * FoxyCart HMAC is a cryptographic method to prevent people from tampering
+ * with your product links
  *
  * @link      https://youandme.digital
  * @copyright Copyright (c) 2019 You & Me Digital
@@ -27,7 +28,7 @@ use craft\base\Model;
  *
  * @author    You & Me Digital
  * @package   FoxyCart HMAC
- * @since     0.0.2
+ * @since     1.0.0
  */
 class Settings extends Model
 {

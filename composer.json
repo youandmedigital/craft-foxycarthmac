@@ -2,7 +2,7 @@
     "name": "youandmedigital/craft-foxycarthmac",
     "description": "FoxyCart HMAC is a cryptographic method to prevent people from tampering with your product links",
     "type": "craft-plugin",
-    "version": "0.0.2",
+    "version": "1.0.0",
     "keywords": [
         "craft",
         "cms",
@@ -22,7 +22,7 @@
         "issues": "https://github.com/youandmedigital/craft-foxycarthmac/issues"
     },
     "require": {
-        "craftcms/cms": "^3.0.0-RC1"
+        "craftcms/cms": "^3.1.0"
     },
     "autoload": {
         "psr-4": {
