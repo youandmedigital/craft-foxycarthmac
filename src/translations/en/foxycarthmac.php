@@ -18,8 +18,8 @@
  *
  * @author    You & Me Digital
  * @package   FoxyCartHMAC
- * @since     0.0.1
+ * @since     0.0.2
  */
 return [
-    '[ FoxyCart HMAC ] Plugin loaded' => '[ FoxyCart HMAC ] Plugin loaded',
+    '[ foxycarthmac ] Plugin loaded' => '[ FoxyCart HMAC ] Plugin loaded',
 ];

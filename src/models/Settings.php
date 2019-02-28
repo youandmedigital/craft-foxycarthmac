@@ -27,7 +27,7 @@ use craft\base\Model;
  *
  * @author    You & Me Digital
  * @package   FoxyCart HMAC
- * @since     0.0.1
+ * @since     0.0.2
  */
 class Settings extends Model
 {

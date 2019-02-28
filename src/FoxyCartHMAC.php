@@ -33,7 +33,7 @@ use yii\base\Event;
  *
  * @author    You & Me Digital
  * @package   FoxyCartHMAC
- * @since     0.0.1
+ * @since     0.0.2
  *
  * @property  FoxyCartHMACServiceService $foxyCartHMACService
  */
@@ -43,7 +43,7 @@ class FoxyCartHMAC extends Plugin
     public static $plugin;
 
     // Schema version for migrations
-    public $schemaVersion = '0.0.1';
+    public $schemaVersion = '0.0.2';
 
     // One-time initialization
     public function init()

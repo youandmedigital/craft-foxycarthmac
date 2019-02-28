@@ -16,7 +16,7 @@ use youandmedigital\foxycarthmac\twigextensions\FoxyCartHMACNode;
  *
  * @author    You & Me Digital
  * @package   FoxyCartHMAC
- * @since     0.0.1
+ * @since     0.0.2
  *
  */
 class FoxyCartHMACTokenParser extends \Twig_TokenParser
