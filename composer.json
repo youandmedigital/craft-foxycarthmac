@@ -1,5 +1,5 @@
 {
-    "name": "youandmedigital/foxycarthmac",
+    "name": "youandmedigital/craft-foxycarthmac",
     "description": "FoxyCart HMAC is a cryptographic method to prevent people from tampering with your product links",
     "type": "craft-plugin",
     "version": "0.0.1",
