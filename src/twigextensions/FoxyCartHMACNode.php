@@ -1,6 +1,6 @@
 <?php
 /**
- * FoxyCart HMAC plugin for Craft CMS 3.x
+ * FoxyCart HMAC plugin for Craft CMS 3.1
  *
  * FoxyCart HMAC is a cryptographic method to prevent people from tampering
  * with your product links
@@ -19,6 +19,8 @@ class FoxyCartHMACNode extends \Twig_Node
     // Compile the twig and pass it onto the fc_hash_html function...
     public function compile(\Twig_Compiler $compiler)
     {
+        $html = $this->getAttribute('html');
+
         $compiler
             ->addDebugInfo($this);
         $compiler
